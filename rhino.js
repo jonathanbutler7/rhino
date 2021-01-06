@@ -11,6 +11,9 @@ const puppeteer = require('puppeteer');
     page.waitForNavigation(), // The promise resolves after navigation has finished
     page.click('#edit-submit'), // Clicking the link will indirectly cause a navigation
   ]);
-  await page.screenshot({ path: 'myscreenshot.png' });
+  await page.goto('https://www.rhino.com/rhino-test');
+  const text = await page.evaluate(() => document.querySelector('#textToScrape').textContent);
+  console.log(text)
+  // await page.screenshot({ path: 'myscreenshot.png' });
   await browser.close();
 })();
