@@ -1,0 +1,1 @@
+This project is a take home coding challenge for a junior site developer role.
