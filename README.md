@@ -19,6 +19,3 @@
 In the project directory, you can run:
 
 ### `node rhino.js`
-=======
-8. Zip up *just* `rhino.js` and send via email
->>>>>>> abb02dc7430def632ddcfc6773a04035639062ad
