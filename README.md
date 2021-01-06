@@ -11,7 +11,6 @@
 5. Once login is complete go to to this page (which you can only view logged in): `testurl`
 6. Grab the text from inside the `<div>` with this id:`textToScrape`
 7. Save the text you grabbed to a local text file named: `scraped.txt`
-<<<<<<< HEAD
 8. Zip up *just* `rhino.js` and send via email
 
 ## Available Scripts
@@ -19,6 +18,3 @@
 In the project directory, you can run:
 
 ### `node rhino.js`
-=======
-8. Zip up *just* `rhino.js` and send via email
->>>>>>> abb02dc7430def632ddcfc6773a04035639062ad
