@@ -1,6 +1,6 @@
 # What is this project?
 
-**A take home coding challenge for a junior site developer role in which I was required to web scrape using [puppeteer](https://pptr.dev/.**)
+**A take home coding challenge for a junior site developer role in which I was required to web scrape using [puppeteer](https://pptr.dev/).**
 
 ## The requirements were:
 
@@ -12,3 +12,9 @@
 6. Grab the text from inside the div with this id:`textToScrape`
 7. Save the text you grabbed to a local text file named: `scraped.txt`
 8. Zip up *just* "rhino.js" and send via email
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `node rhino.js`
