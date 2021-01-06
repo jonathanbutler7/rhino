@@ -1,6 +1,6 @@
 # What is this project?
 
-**A take home coding challenge for a junior site developer role.**
+**A take home coding challenge for a junior site developer role in which I was required to web scrape using [puppeteer](https://pptr.dev/.**)
 
 ## The requirements were:
 
