@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
-const { RHINO_LOGIN, RHINO_PASSWORD, RHINO_TESTURL } = process.env;
 const fs = require('fs');
+const { RHINO_LOGIN, RHINO_PASSWORD, RHINO_TESTURL } = process.env;
 
 (async () => {
   const browser = await puppeteer.launch();
@@ -10,13 +10,15 @@ const fs = require('fs');
   await page.type('#edit-pass', RHINO_PASSWORD);
 
   await Promise.all([
-    page.waitForNavigation(), // The promise resolves after navigation has finished
-    page.click('#edit-submit'), // Clicking the link will indirectly cause a navigation
+    page.waitForNavigation(),
+    page.click('#edit-submit'),
   ]);
+
   await page.goto(RHINO_TESTURL);
   const text = await page.evaluate(
     () => document.querySelector('#textToScrape').textContent
   );
+  
   fs.writeFileSync('scraped.txt', text);
   await browser.close();
 })();
