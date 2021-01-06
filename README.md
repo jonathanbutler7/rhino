@@ -5,10 +5,10 @@
 ## The requirements were:
 
 1. Create a new node project and install puppeteer
-2. Create a new file called "rhino.js" to work in
+2. Create a new file called `rhino.js` to work in
 3. In this file launch a new puppeteer browser and go to: `https://www.rhino.com/user/login`
 4. Login to the site with these credentials: `username` `password`
 5. Once login is complete go to to this page (which you can only view logged in): `testurl`
-6. Grab the text from inside the div with this id:"textToScrape"
-7. Save the text you grabbed to a local text file named: "scraped.txt"
+6. Grab the text from inside the div with this id:`textToScrape`
+7. Save the text you grabbed to a local text file named: `scraped.txt`
 8. Zip up *just* "rhino.js" and send via email
