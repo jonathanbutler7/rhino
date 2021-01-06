@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const fs = require('fs');
 
 (async () => {
   const browser = await puppeteer.launch();
@@ -12,8 +13,9 @@ const puppeteer = require('puppeteer');
     page.click('#edit-submit'), // Clicking the link will indirectly cause a navigation
   ]);
   await page.goto('https://www.rhino.com/rhino-test');
-  const text = await page.evaluate(() => document.querySelector('#textToScrape').textContent);
-  console.log(text)
-  // await page.screenshot({ path: 'myscreenshot.png' });
+  const text = await page.evaluate(
+    () => document.querySelector('#textToScrape').textContent
+  );
+  fs.writeFileSync('scraped.txt', text);
   await browser.close();
 })();
